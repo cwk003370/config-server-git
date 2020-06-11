@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cwk003370/SpringCloudConfig.git
+          searchPaths: config-repo
+          username: cwk003370
+          password: 2627284cwk
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://49.235.247.57:11001/eureka/
+server:
+  port: 14001
